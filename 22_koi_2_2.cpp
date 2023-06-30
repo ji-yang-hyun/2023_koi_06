@@ -26,7 +26,7 @@ int N, Q, K;
 
 int uf(int i) {
 	return i == ud[i] ? i : (ud[i] = uf(ud[i])); // 만약 i번째 노드가 uf를 한번 했다면 ud[i]를 uf(ud[i])로 바꾸고 return 아니면 i return
-	//
+	//만약 처음에 만난곳이 최상단이 아니라면 나중에 처음에 만난곳이 uf를 하면서 최상단으로 갈것이기 때문에 unionfind가 된다
 }
 
 void uf(int a, int b) { // union find 함수 b는 현재노드 a는 현재 노드의 부모노드
