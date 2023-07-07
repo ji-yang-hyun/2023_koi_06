@@ -1,7 +1,10 @@
-#include<iostream>
-using namespace std;
-int main(){
-    int a[100] = {};
-    a[2] = 5;
-    cout << a[a+2];
+#include <iostream>
+using namespace std;//이름공간 지움
+
+ 
+int main() {
+ 
+    int a=5;
+    a = a >> 1;
+    cout << a;
 }
